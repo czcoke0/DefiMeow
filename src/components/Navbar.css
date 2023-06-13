@@ -36,6 +36,10 @@
     cursor: pointer;
 }
 
+.favicon{
+    width: 100px;
+    height: 90px;
+}
 @media screen and (max-width:1240px){
     .hamburger{
       display: flex;

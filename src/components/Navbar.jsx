@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import './Navbar.css'
+import favicon from '../assets/favicon1.png'
 const Navbar = () => {
     const[click, setClick]=useState(false);
     const handleClick=() => setClick(!click);
@@ -9,6 +10,7 @@ const Navbar = () => {
     <div className='header'>
       <div className='container'>
         <h1><span className='primary'>DeFi</span><span >Meow</span></h1>
+        <img  className='favicon' src={favicon} alt=''/>
         <ul className={click?'nav-menu active':'nav-menu'}>
             <li>
                 <a href='/'>Home</a>
